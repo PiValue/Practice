@@ -1,9 +1,13 @@
 package com.leetcode.list;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
 
 @AllArgsConstructor
-public class ListNode<T> {
-    T data;
-    ListNode<T> next;
+@Getter
+@ToString
+public class ListNode {
+    public final int val;
+    public ListNode next;
 }

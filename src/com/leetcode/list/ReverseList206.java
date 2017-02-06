@@ -5,11 +5,11 @@ package com.leetcode.list;
  * 
  * https://leetcode.com/problems/reverse-linked-list/
  */
-public class ReverseList206<T> {
-    public ListNode<T> reverseList(ListNode<T> head) {
-        ListNode<T> prev = null;
+public class ReverseList206 {
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
         while(head != null) {
-            ListNode<T> temp = head.next;
+            ListNode temp = head.next;
             head.next = prev;
             prev = head;
             head = temp;
