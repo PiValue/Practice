@@ -55,6 +55,50 @@ public List<List<Integer>> pathSums(Node root, int sum, List<Integer> path) {
     return result;
 }
 
+--- Runnable code ---
 
+import java.util.ArrayList;
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+
+public class PathSums {
+    private List<List<Integer>> pathSums (Node root, int sum, List<Integer> path) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+        if (root.left == null && root.right == null) {
+            // this is a leaf node
+            if ((sum - root.value) == 0) {
+                path.add(root.value);
+                result.add(new ArrayList<>(path));
+                path.remove(path.size() - 1);
+            }
+            return result;
+        }
+        
+        path.add(root.value);
+        result.addAll(pathSums(root.left, sum - root.value, path));
+        result.addAll(pathSums(root.right, sum - root.value, path));
+        path.remove(path.size() - 1);
+        return result;
+    }
+
+    @AllArgsConstructor
+    private static class Node {
+        private int value;
+        private Node left, right;
+    }
+    
+    
+    public static void main(String[] args) {
+        Node root = new Node(5, new Node(4, new Node(11, new Node(7, null, null), new Node(2, null, null)), null), new Node(8, new Node(13, null, null), new Node(4, new Node(5, null, null), new Node(1, null, null))));
+        System.out.println(new PathSums().pathSums(root, 22, new ArrayList<>()));
+    }
+}
 
 Update: Cleared for onsite at Seattle office. 4-5 rounds.
+
+
+
