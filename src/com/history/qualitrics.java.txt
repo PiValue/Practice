@@ -1,3 +1,7 @@
+// Other question - Hashmap performance for lookup, worstcase. How would you improve chaining so worstcase isn't always O(N) one heavy collision cases. Said could have BST like structure from bucket incase of collision.
+// General discussion on my profile and Qualitrics work.
+
+
 //Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 
 //For example: Given the below binary tree and sum = 22,
