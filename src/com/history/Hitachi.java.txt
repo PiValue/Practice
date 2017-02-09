@@ -1,0 +1,41 @@
+// Date: 12/14/2016 - called for onsite.
+// 4 -> 5 -> 1 -> 7 -> 3
+// n = 2
+// remove nth node from the end of the list
+
+public class Node {
+    private int val;
+    Node next;
+}
+
+public Node removeNthNodeFromEnd(Node node, int n) {
+    if (node == null) {
+        return null;
+    }
+    
+    Node first = node;
+    Node second = node;
+    while(first != null && n > 0) {
+        first = first.next;
+        n--;
+    }
+    if (n > 0) {
+        // Given n is greater than length of the list
+        throw new IllegalArgumentException("Given n value is greater than the length of the list.");
+    }
+    if (first == null) {
+        return node.next;
+    }
+    while (first.next != null) {
+        first = first.next;
+        second = second.next;
+    }
+    second.next = second.next.next;
+    return node;
+}
+
+// Notes:
+// Wasn't a good performance. 
+// Naming: node (input parameter) should have been called head, (first and second) could be named something better - for easing readability.
+// Didn't consider n = length-of-list case when started out and found while coding - think before starting.
+// Called for onsite at Bellevue office. Scheduled for 14th Feb.
