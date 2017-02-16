@@ -10,6 +10,10 @@ import lombok.Getter;
 /**
  * Given a large file with lines of string - write a function to find if there
  * is a given prefix.
+ * 
+ * Implementing a Trie that could do prefix lookups in O(P) where P is length of prefix.
+ * For simplicity here, we are not loading from a file but just testing with test strings, but 
+ * could change to read from a (mocked) reader.
  * */
 public class PrefixInFile {
     public static void main(String[] args) {
