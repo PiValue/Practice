@@ -1,3 +1,5 @@
+package com.g4g.others;
+
 import java.io.*;
 
 /* pow(a, n) with complexity theta(log(n)) */
