@@ -1,0 +1,18 @@
+1. Round-1:
+1.1 Write a method that given a list of strings and a target string, would remove first occurrence of target string from given input string.
+1.2 Write a method that given arbitrarily nested list List<Object> where element could be a string or nested list again. Given a target, remove the first occurrence of it reading left to right (and leave all others as it is).
+
+2. Round-2:
+Given a graph (special graph with even number of edges on each node), find a longest path from given node back to same node.
+>> Checked how I would do it.
+>> How I would represent Edge.
+>> What assumptions etc
+
+3. Round-3:
+Design an app like step counter that is integrated with Facebook, what interface would you expose from your service and what how would you implement each. What are the tradeoffs for each option. 
+App should show your stats and stats from your friends.
+
+4. Round-4:
+General director level meeting where questions on background, most challenging, how I rampup on anything, how I mentor, how I prioritize things with strict deadlines - examples for each.
+
+Might have forgotten one more round, not sure, I am like a goldfish.
