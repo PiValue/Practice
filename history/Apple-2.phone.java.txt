@@ -1,0 +1,7 @@
+With HM, started off with general question on background, inteerests and match with the team. Then went into bit technical 10mins into call. Main things covered. 
+1. Asked about what new features I liked in Java8 and why. 
+2. When would I use CompletableFutures - advantages, what applications would use them the best.
+3. How would I go about immplementing a HashMap - make it concurrent. How ConcurrentHashMaps work - internal details.
+4. What is more important for the team (service performance - latency most important).
+5. Frameworks I have used if any.
+6. Some memory model stuff, don't remember exactly.
