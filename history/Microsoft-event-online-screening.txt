@@ -1,0 +1,9 @@
+1. Debugging a code that is supposed to move array elements K-positions to right. Given code was iterating from first element to the last, overwriting existing elements before moving those elements.
+>> Just had to change the loop to start from last element to first, moving each to right by K-positions.
+
+2. Spreadsheet column name to number conversion implementation. (Column names go something like, A, B, C ... Z, AA, AB..AZ, BA... etc - should be mapped to 1, 2, 3 ... 26, 27, 28...)
+>> https://leetcode.com/problems/excel-sheet-column-title/
+
+3. To add
+
+4. To add
